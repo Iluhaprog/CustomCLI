@@ -10,8 +10,16 @@ module.exports = {
         '@typescript-eslint/no-shadow': ['error'],
         'no-shadow': 'off',
         'no-undef': 'off',
-        'sort-imports': ['error'],
         'object-curly-spacing': ['error', 'always'],
+        'sort-imports': [
+          'error',
+          {
+            memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+            allowSeparatedGroups: true,
+            ignoreDeclarationSort: true,
+            ignoreMemberSort: true,
+          },
+        ],
       },
     },
   ],
